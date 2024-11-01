@@ -17,7 +17,7 @@ def ask_docquestion(messages, model="gpt-4o", temperature=0):
 def analyze_image(base64_image_url, model="gpt-4o" , temperature=0):
      completion = client.chat.completions.create(
         model=model,
-        messages=[{"role":"user","content":[{"type":"text", "text":"What's in this image?"}, 
+        messages=[{"role":"user","content":[{"type":"text", "text":"Anylze the image and look at its symptoms, anwser what may be the issue."}, 
                                       {
                                           "type": "image_url",
                                            "image_url":{
